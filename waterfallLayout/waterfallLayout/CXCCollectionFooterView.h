@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CXCCollectionFooterView : UICollectionReusableView
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

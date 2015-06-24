@@ -12,14 +12,14 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ujV-ny-kCp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="owf-PQ-0oF">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="owf-PQ-0oF" customClass="WaterfallViewLayout">
                             <size key="itemSize" width="152" height="185"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="50" height="50"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="GWN-Mo-Qww">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="GWN-Mo-Qww" customClass="WaterfallShopCell">
                                 <rect key="frame" x="0.0" y="0.0" width="152" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -60,9 +60,13 @@
                                     <constraint firstItem="pQN-WS-Esb" firstAttribute="leading" secondItem="GWN-Mo-Qww" secondAttribute="leadingMargin" id="lFh-B3-aHs"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="pQN-WS-Esb" secondAttribute="trailing" id="rZl-Id-Feg"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="iconView" destination="8IJ-qo-lkL" id="htY-h6-f6I"/>
+                                    <outlet property="priceLaber" destination="ccQ-Ou-iBn" id="5g5-jg-HlM"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uHr-Or-jFZ" customClass="CXCCollectionFooterView">
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footerView" id="uHr-Or-jFZ" customClass="CXCCollectionFooterView">
                             <rect key="frame" x="0.0" y="185" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -76,12 +80,18 @@
                                 <constraint firstItem="gP6-9H-Tzj" firstAttribute="centerX" secondItem="uHr-Or-jFZ" secondAttribute="centerX" id="7Kr-M3-1X7"/>
                                 <constraint firstItem="gP6-9H-Tzj" firstAttribute="centerY" secondItem="uHr-Or-jFZ" secondAttribute="centerY" id="uFK-Wh-31L"/>
                             </constraints>
+                            <connections>
+                                <outlet property="indicator" destination="gP6-9H-Tzj" id="r3Q-te-MNp"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="Ibk-gJ-uqy" id="Sq3-9I-FR4"/>
                             <outlet property="delegate" destination="Ibk-gJ-uqy" id="3jJ-Hj-47g"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="layout" destination="owf-PQ-0oF" id="kzg-5O-AiW"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeN-k3-5cR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
