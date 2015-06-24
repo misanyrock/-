@@ -15,6 +15,10 @@
 		E84659881B3AC7E500D80325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84659861B3AC7E500D80325 /* LaunchScreen.storyboard */; };
 		E84659931B3AC7E500D80325 /* waterfallLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84659921B3AC7E500D80325 /* waterfallLayoutTests.m */; };
 		E846599E1B3AC7E500D80325 /* waterfallLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E846599D1B3AC7E500D80325 /* waterfallLayoutUITests.m */; };
+		E84659B11B3AC91200D80325 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = E84659AE1B3AC91200D80325 /* 1.plist */; };
+		E84659B21B3AC91200D80325 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E84659AF1B3AC91200D80325 /* 2.plist */; };
+		E84659B31B3AC91200D80325 /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E84659B01B3AC91200D80325 /* 3.plist */; };
+		E84659B61B3ACBB600D80325 /* CXCCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E84659B51B3ACBB600D80325 /* CXCCollectionFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		E84659991B3AC7E500D80325 /* waterfallLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waterfallLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E846599D1B3AC7E500D80325 /* waterfallLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = waterfallLayoutUITests.m; sourceTree = "<group>"; };
 		E846599F1B3AC7E500D80325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84659AE1B3AC91200D80325 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		E84659AF1B3AC91200D80325 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		E84659B01B3AC91200D80325 /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		E84659B41B3ACBB600D80325 /* CXCCollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCCollectionFooterView.h; sourceTree = "<group>"; };
+		E84659B51B3ACBB600D80325 /* CXCCollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCCollectionFooterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,9 @@
 		E84659781B3AC7E500D80325 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E84659AE1B3AC91200D80325 /* 1.plist */,
+				E84659AF1B3AC91200D80325 /* 2.plist */,
+				E84659B01B3AC91200D80325 /* 3.plist */,
 				E84659891B3AC7E500D80325 /* Info.plist */,
 				E84659791B3AC7E500D80325 /* main.m */,
 			);
@@ -151,6 +163,8 @@
 			children = (
 				E84659811B3AC7E500D80325 /* Main.storyboard */,
 				E84659861B3AC7E500D80325 /* LaunchScreen.storyboard */,
+				E84659B41B3ACBB600D80325 /* CXCCollectionFooterView.h */,
+				E84659B51B3ACBB600D80325 /* CXCCollectionFooterView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -268,8 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84659B31B3AC91200D80325 /* 3.plist in Resources */,
 				E84659881B3AC7E500D80325 /* LaunchScreen.storyboard in Resources */,
+				E84659B21B3AC91200D80325 /* 2.plist in Resources */,
 				E84659851B3AC7E500D80325 /* Assets.xcassets in Resources */,
+				E84659B11B3AC91200D80325 /* 1.plist in Resources */,
 				E84659831B3AC7E500D80325 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84659B61B3ACBB600D80325 /* CXCCollectionFooterView.m in Sources */,
 				E84659801B3AC7E500D80325 /* ViewController.m in Sources */,
 				E846597D1B3AC7E500D80325 /* AppDelegate.m in Sources */,
 				E846597A1B3AC7E500D80325 /* main.m in Sources */,

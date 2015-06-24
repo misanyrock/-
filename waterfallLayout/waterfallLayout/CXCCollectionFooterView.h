@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CXCCollectionFooterView.h
 //  waterfallLayout
 //
 //  Created by cxc on 15/6/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
-
+@interface CXCCollectionFooterView : UICollectionReusableView
 
 @end
-
